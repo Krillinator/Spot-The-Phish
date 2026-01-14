@@ -1,0 +1,28 @@
+/* Optional: keeps it more “internal debrief” than “marketing” */
+.hero {
+  background: #0b1220;
+  color: #fff;
+}
+.hero small {
+  opacity: 0.8;
+}
+.section-title {
+  letter-spacing: 0.02em;
+}
+.muted {
+  color: #6c757d;
+}
+.callout {
+  border-left: 4px solid #0d6efd;
+  background: #f8f9fa;
+}
+.kpi {
+  font-size: 0.95rem;
+}
+.kpi strong {
+  display: block;
+  font-size: 1.05rem;
+}
+.footer-link {
+  opacity: 0.9;
+}

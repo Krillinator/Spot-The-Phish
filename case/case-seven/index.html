@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <title>SV: Snabb fråga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap (typography only) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Shared case styles -->
+    <link rel="stylesheet" href="../case.css" />
+  </head>
+
+  <body>
+    <div class="email-wrapper">
+      <!-- Choice -->
+      <div class="p-3 border-bottom bg-white d-flex gap-2 justify-content-end">
+        <button class="btn btn-outline-danger btn-sm" id="answerPhish">
+          Phish
+        </button>
+        <button class="btn btn-outline-success btn-sm" id="answerReal">
+          Real
+        </button>
+      </div>
+
+      <!-- Header -->
+      <div class="email-header">
+        <div class="subject">SV: Snabb fråga</div>
+      </div>
+
+      <!-- Meta -->
+      <div class="email-meta">
+        <div id="clue-from">
+          <strong>From:</strong> Johan Lindström
+          &lt;johan.lindstrom@bytebullen-ledning.com&gt;
+        </div>
+        <div><strong>To:</strong> you@example.com</div>
+        <div><strong>Date:</strong> Tue, 14 Jan 2026 14:37</div>
+      </div>
+
+      <!-- Body -->
+      <div class="email-body">
+        <p>Hej,</p>
+
+        <p>
+          Sitter i möte just nu och behöver din hjälp snabbt. Vår kollega fyller
+          år och vi behöver köpa ett presentkort.
+        </p>
+
+        <p>
+          Kan du köpa presentkort för totalt 500 kr och skicka koderna till mig
+          så snart som möjligt?
+        </p>
+
+        <p>Vi tar det administrativt senare.</p>
+
+        <p class="mb-0">/Johan</p>
+
+        <p id="clue-urgency" class="mt-3 text-muted">Återkom omgående.</p>
+
+        <div class="divider"></div>
+
+        <div class="hint">
+          Obs: Chef-bedrägerier innehåller ofta inga länkar eller bilagor.
+        </div>
+      </div>
+
+      <div class="email-footer">© 2026 ByteBullen AB</div>
+    </div>
+
+    <!-- Next Phish -->
+    <div class="container text-center mt-4">
+      <a
+        href="../case-eight/index.html"
+        class="btn btn-outline-primary btn-lg"
+        id="nextPhishBtn"
+        aria-disabled="true"
+      >
+        Next phish →
+      </a>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

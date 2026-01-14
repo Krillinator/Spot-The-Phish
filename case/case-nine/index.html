@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Security alert: sign-in activity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap (typography only) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Shared case styles -->
+    <link rel="stylesheet" href="../case.css" />
+  </head>
+
+  <body>
+    <div class="email-wrapper">
+      <!-- Choice -->
+      <div class="p-3 border-bottom bg-white d-flex gap-2 justify-content-end">
+        <button class="btn btn-outline-danger btn-sm" id="answerPhish">
+          Phish
+        </button>
+        <button class="btn btn-outline-success btn-sm" id="answerReal">
+          Real
+        </button>
+      </div>
+
+      <!-- Header -->
+      <div class="email-header">
+        <div class="subject">Microsoft Security: unusual sign-in activity</div>
+      </div>
+
+      <!-- Meta -->
+      <div class="email-meta">
+        <div id="clue-from">
+          <strong>From:</strong> Microsoft Security
+          &lt;no-reply@accountprotection.microsoft.com&gt;
+        </div>
+        <div><strong>To:</strong> you@example.com</div>
+        <div><strong>Date:</strong> Tue, 14 Jan 2026 16:08</div>
+      </div>
+
+      <!-- Body -->
+      <div class="email-body">
+        <p>Hello,</p>
+
+        <p>
+          We detected repeated sign-in attempts to your Microsoft account, and
+          multiple push notifications have been sent to your authentication app.
+        </p>
+
+        <p>
+          To prevent further attempts, please
+          <strong>approve the next sign-in request</strong> when it appears.
+          This will allow us to confirm your identity and stop the activity.
+        </p>
+
+        <p>
+          If you are unable to approve the request, reply to this message with
+          the <strong>6-digit verification code</strong> shown in your
+          authenticator app so we can secure your account manually.
+        </p>
+
+        <p id="clue-urgency" class="mt-3 text-muted">
+          Important: If no action is taken within 10 minutes, your account may
+          be temporarily restricted.
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="hint">TIP: What are we actually asked to do?</div>
+      </div>
+
+      <div class="email-footer">© 2026 Microsoft</div>
+    </div>
+
+    <!-- Next Phish -->
+    <div class="container text-center mt-4">
+      <a
+        href="../case-ten/index.html"
+        class="btn btn-outline-primary btn-lg"
+        id="nextPhishBtn"
+        aria-disabled="true"
+      >
+        Next phish →
+      </a>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

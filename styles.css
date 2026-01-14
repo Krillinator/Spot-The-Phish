@@ -1,0 +1,42 @@
+:root {
+  --bg: #0b0c10;
+  --card: #12141b;
+  --text: #e9eef7;
+  --muted: #a7b0c0;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:focus-visible .hover-card,
+.card-link:hover .hover-card {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.card-link:focus-visible {
+  outline: 3px solid rgba(13, 110, 253, 0.4); /* Bootstrap primary-ish */
+  outline-offset: 4px;
+}

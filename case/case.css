@@ -1,0 +1,113 @@
+body {
+  background-color: #f1f3f4;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 0;
+}
+
+.email-wrapper {
+  max-width: 640px;
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.email-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.subject {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.email-meta {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #5f6368;
+  border-bottom: 1px solid #dadce0;
+}
+
+.email-meta strong {
+  color: #202124;
+}
+
+.email-body {
+  padding: 24px 20px;
+  font-size: 15px;
+  color: #202124;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 24px 0;
+}
+
+.cta-button img {
+  width: 220px;
+}
+
+.email-footer {
+  padding: 16px 20px;
+  font-size: 12px;
+  color: #5f6368;
+  border-top: 1px solid #dadce0;
+  background: #fafafa;
+}
+
+.divider {
+  height: 1px;
+  background: #dadce0;
+  margin: 24px 0;
+}
+
+.hint {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #9aa0a6;
+}
+
+/* highlight the element being explained */
+.clue-highlight {
+  outline: 3px solid rgba(220, 53, 69, 0.6); /* bootstrap danger-ish */
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* overlay tooltip box */
+.clue-pop {
+  position: absolute;
+  z-index: 9999;
+  max-width: 320px;
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  padding: 12px 12px 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+}
+
+.clue-pop .title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.clue-pop .controls {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.clue-arrow {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-left: 1px solid #dadce0;
+  border-top: 1px solid #dadce0;
+  transform: rotate(45deg);
+}
